@@ -16,7 +16,7 @@ console.log(OBJLoader)
 // Load OBJ file
 const loader = new OBJLoader();
 loader.load(
-  '../model.obj',
+    'https://anonymous675.github.io/AstroGardens/model.obj',
   function (object) {
     // Add the loaded object to the scene
     scene.add(object);
