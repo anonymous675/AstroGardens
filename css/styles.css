@@ -14,7 +14,13 @@
 #model {
   /* width: 90%; */
   height: 50vh;
-  background-color: #000;
+  overflow: hidden;
+  /* background-color: #000; */
+}
+
+#model iframe {
+  position: relative;
+  top: -64px;
 }
 
 :root {
