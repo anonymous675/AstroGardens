@@ -20,6 +20,16 @@ loader.load(
   function (object) {
     // Add the loaded object to the scene
     scene.add(object);
+
+    const box = new THREE.Box3().setFromObject(object);
+    const modelCenter = box.getCenter(new THREE.Vector3());
+    camera.lookAt(modelCenter);
+  },
+  function (xhr) {
+    console.log((xhr.loaded / xhr.total) * 100 + '% loaded');
+  },
+  function (error) {
+    console.error('An error occurred while loading the model:', error);
   }
 );
 
@@ -33,7 +43,8 @@ scene.add(directionalLight);
 
 // Position the camera
 camera.position.z = 5;
-
+// camera.position.set(0,0, 5)
+camera.lookAt(target)
 // Render loop
 function animate() {
     requestAnimationFrame(animate);
