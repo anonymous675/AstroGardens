@@ -44,7 +44,7 @@ scene.add(directionalLight);
 // Position the camera
 camera.position.z = 5;
 // camera.position.set(0,0, 5)
-camera.lookAt(target)
+// camera.lookAt(target)
 // Render loop
 function animate() {
     requestAnimationFrame(animate);
