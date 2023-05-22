@@ -184,17 +184,18 @@
 
     <!-- <script src="dist/bundle.js"></script> -->
 
-    <!-- <script type="module">
-        import Lightbox from './photoswipe/photoswipe-lightbox.esm.js';
-        const lightbox = new Lightbox({
-          gallery: '#my-gallery',
+    <script type="module">
+        import PhotoSwipeLightbox from './photoswipe/photoswipe-lightbox.esm.js';
+
+        const lightbox = new PhotoSwipeLightbox({
+          gallery: '#photos',
           children: 'a',
           pswpModule: () => import('./photoswipe/photoswipe.esm.js')
         });
         lightbox.init();
-    </script> -->
+    </script>
 
-    <script type="module">
+    <!-- <script type="module">
         import PhotoSwipeLightbox from './photoswipe/photoswipe-lightbox.esm.js';
         // or 'photoswipe-dynamic-caption-plugin' if using package manager
         import PhotoSwipeDynamicCaption from 'https://unpkg.com/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.esm.js';
@@ -220,7 +221,7 @@
         
         // make sure you init photoswipe core after plugins are added
         lightbox.init();
-    </script>
+    </script> -->
     
 </body>
 </html>
