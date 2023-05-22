@@ -11,6 +11,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+#photos img {
+  width: 100%;
+}
+
 #team-members-grid {
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
