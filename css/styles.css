@@ -15,12 +15,13 @@
   /* width: 90%; */
   height: 70vh;
   overflow: hidden;
-  /* background-color: #000; */
 }
 
 #model iframe {
   position: relative;
   top: -64px;
+  background-color: #000;
+
 }
 
 :root {
