@@ -26,6 +26,12 @@ justify-content: center; /* Align horizontal */
 align-items: center; /* Align vertical */
 }
 
+#gallery-title {
+  background: green;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 #photos {
   /* Prevent vertical gaps */
   line-height: 0;
