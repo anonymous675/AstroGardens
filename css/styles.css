@@ -28,8 +28,11 @@ align-items: center; /* Align vertical */
 
 #gallery-title {
   background: green;
+  text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  position: relative;
+  bottom: 68px;
 }
 
 #photos {
